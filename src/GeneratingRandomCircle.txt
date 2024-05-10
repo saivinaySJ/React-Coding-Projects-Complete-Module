@@ -1,0 +1,7 @@
+Here ima having a simple task given in React, that is : Whenever user clicks on the screen, 
+we need to create a circle with random radius, you can put maximum limit, so that it does not 
+go out of the screen, it should have only border and maximum two circles should be there at a 
+timeand if the user clicks for the 3rd time and iftwo circles are there , thay both will be 
+gone and another circle will come ad if two cricles are intersecting , you should generate 
+a message in the consolestating that ' Two random circles are intersecting'.  can u do 
+this in a very simple way .

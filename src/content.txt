@@ -1,0 +1,34 @@
+ import Circle from "./Circle";
+import { useState } from "react";
+function CountCircles() {
+  const [circles, setCircles] = useState([]);
+  const addCircle = () => {
+    console.log(circles);
+    const newCircle = {
+      x: Math.random() * 500,
+      y: Math.random() * 500,
+    };
+    setCircles([...circles, newCircle]);
+  };
+  return (
+    <div>
+      <h1>CountCircles</h1>
+      <button onClick={addCircle}>AddCount</button>
+      {circles.map((circle, index) => {
+        return <Circle key={index} x={circle.x} y={circle.y} />;
+      })}
+    </div>
+  );
+}
+export default CountCircles;
+
+
+const Circle = ({ x, y }) => {
+  return (
+    <svg width="100%" height="100%">
+      <circle cx={x} cy={y} r="10" fill="grey" />
+    </svg>
+  );
+};
+
+export default Circle;

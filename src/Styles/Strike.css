@@ -1,0 +1,9 @@
+.dynamic-list-app li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.dynamic-list-app li.striked-through {
+  text-decoration: line-through;
+}
